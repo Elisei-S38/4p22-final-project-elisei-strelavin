@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.card-item {
+  position: relative;
+  width: 300px;
+  margin: 0;
+  height: 850px;
+
+  transition: .6s background-color, .6s box-shadow;
+  border: 1px solid black;
+}
+
+.card-item:hover {
+  background: rgb(63, 63, 63);
+  box-shadow: black 0 0 5px 15px;
+} 
+
+.card-item-img {
+  width: 300px;
+  height: 450px;
+}
+
+.card-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-title {
+  width: 300px;
+  color: goldenrod;
+  font-size: 28px;
+  padding: 5px 10px;
+  transition: .6s color, .6s text-shadow;
+  text-decoration: none;
+}
+
+.content-title:hover {
+  color: yellow;
+  text-shadow: yellow 1px 0 10px;
+}
+
+.content-desc {
+  flex: 1 1 auto;
+  width: 300px;
+  color: rgb(230, 230, 230);
+  font-size: 14px;
+  padding: 5px;
+}
+
+.card-item-button {
+  width: 240px;
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: goldenrod;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: .6s background-color, .6s color, .6s text-shadow;
+  background: rgb(43, 43, 43);
+}
+
+.card-item-button:hover {
+  background: rgb(100, 100, 100);
+  color: yellow;
+  text-shadow: yellow 3px 0 5px;
+}
+
+@media screen and (max-width: 680px) {
+  .card-item {
+    width: calc(300 / 680 * 100vw);
+    height: calc(850 / 680 * 100vw);
+  }
+
+  .card-item:hover {
+    box-shadow: black 0 0 calc(5 / 680 * 100vw) calc(15 / 680 * 100vw);
+  }
+
+  .card-item-img {
+    width: calc(300 / 680 * 100vw);
+    height: calc( 450 / 680 * 100vw);
+  }
+
+  .content-title {
+    width: calc(300 / 680 * 100vw);
+    font-size: calc(28 / 680 * 100vw);
+    padding: calc(5 / 680 * 100vw) calc(10 / 680 * 100vw);
+  }
+
+  .content-desc {
+    width: calc(300 / 680 * 100vw);
+    font-size: calc(14 / 680 * 100vw);
+    padding: calc(5 / 680 * 100vw);
+  }
+
+  .card-item-button {
+    width: calc(240 / 680 * 100vw);
+    bottom: calc(15 / 680 * 100vw);
+    left: calc(30 / 680 * 100vw);
+    font-size: calc(20 / 680 * 100vw);
+    font-weight: calc(500 /680 * 100vw);
+    border-radius: calc(25 / 680 * 100vw);
+    padding: calc(5 / 680 * 100vw) calc(10 / 680 * 100vw);
+  }
+}

@@ -1,0 +1,16 @@
+
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  color: darkgoldenrod;
+}
+
+.count {
+  color: wheat;
+}

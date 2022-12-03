@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+}
+
+.container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.container__form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 600px;
+  height: 383px;
+  background: rgb(30, 30, 30);
+  transition: .6s box-shadow;
+}
+
+.container__form:hover {
+  box-shadow: black 0 0 5px 15px;
+}
+
+.container-form__heading {
+  margin: 0;
+  margin-left: 242px;
+  margin-right: 242px;
+  margin-top: 26px; 
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: goldenrod;
+}
+
+.container-form__email-label {
+  width: 40px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 17px;
+  margin-left: 53px;
+  margin-right: 501px;
+  color: goldenrod;
+}
+
+.email-error {
+  position: absolute;
+  font-weight: 700;
+  top: 91px;
+  right: 46px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #EE2424;
+}
+
+.container-form__email-input {
+  width: 509px;
+  height: 49px;
+  background: rgb(30, 30, 30);
+  border: 1px solid goldenrod;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #787878;
+  margin-left: 45px;
+  margin-right: 46px;
+  margin-top: 4px;
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  cursor: pointer;
+  transition: .6s background-color, .6s border, .6s box-shadow;
+}
+
+.container-form__email-input:hover {
+  background: rgb(43, 43, 43);
+  border: 1px solid yellow;
+  box-shadow: yellow 0 0 2px 2px;
+}
+
+.container-form__email-input::placeholder {
+  color: #404040;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.container-form__password-label {
+  width: 56px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 53px;
+  margin-top: 11px;
+  margin-right: 491px;
+  color: goldenrod;
+}
+
+
+.pass-error {
+  position: absolute;
+  top: 172px;
+  right: 46px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #EE2424;
+  font-weight: 700;
+}
+
+.container-form__password-input {
+  width: 509px;
+  height: 49px;
+  background: rgb(30, 30, 30);
+  border: 1px solid goldenrod;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #787878;
+  margin-top: 5px;
+  margin-left: 45px;
+  margin-right: 46px;
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  cursor: pointer;
+  transition: .6s background-color, .6s color, .6s box-shadow;
+}
+
+.container-form__password-input:hover {
+  background: rgb(43, 43, 43);
+  border: 1px solid yellow;
+  box-shadow: yellow 0 0 2px 2px;
+}
+
+.container-form__password-input::placeholder {
+  color: #404040;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.container-form__button {
+  width: 180px;
+  height: 52px;
+  background: rgb(30, 30, 30);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 16px;
+  color: goldenrod;
+  border: 1px solid goldenrod;
+  margin-top: 52px;
+  margin-left: 210px;
+  margin-right: 210px;
+  margin-bottom: 37px;
+  transition: .6s background-color, .6s color, .6s text-shadow;
+}
+
+.container-form__button:hover {
+  background: rgb(100, 100, 100);
+  color: yellow;
+  text-shadow: yellow 1px 0 10px;
+}
+
+ @media screen and (max-width: 720px) {
+    .container {
+      margin-top: calc(80 / 720 * 100vw);
+    }
+
+    .container__form {
+      width: calc(600 / 720 * 100vw);
+      height: calc(382 / 720 * 100vw);
+    }
+
+    .container-form__heading {
+      margin-top: calc(26 / 720 * 100vw);
+      margin-left: calc(242 / 720 * 100vw);
+      margin-right: calc(243 / 720 * 100vw);
+      font-size: calc(50 / 720 * 100vw);
+      line-height: calc(50 / 720 * 100vw);
+    }
+
+    .container-form__email-label {
+      width: calc(40 / 720 * 100vw);
+      height: calc(16 / 720 * 100vw);
+      margin-top: calc(17 / 720 * 100vw);
+      margin-left: calc(53 / 720 * 100vw);
+      margin-right: calc(501 / 720 * 100vw);
+      font-size: calc(16 / 720 * 100vw);
+      line-height: calc(16 / 720 * 100vw);
+    }
+
+    .email-error {
+      position: absolute;
+      top: calc(91 / 720 * 100vw);
+      right: calc(46 / 720 * 100vw);
+      font-size: calc(16 / 720 * 100vw);
+      line-height: calc(16 / 720 * 100vw);
+      font-weight: calc(600 / 720 * 100vw);
+    }
+
+    .container-form__email-input {
+      display: flex;
+      width: calc(509 / 720 * 100vw);
+      height: calc(49 / 720 * 100vw);
+      margin-top: calc(3 / 720 * 100vw);
+      margin-left: calc(45 / 720 * 100vw);
+      margin-right: calc(45 / 720 * 100vw);
+      border: calc(2 / 720 * 100vw) solid goldenrod;
+      font-size: calc(28 / 720 * 100vw);
+      line-height: calc(36 / 720 * 100vw);
+      padding-left: calc(15 / 720 * 100vw);
+      padding-top: calc(7 / 720 * 100vw);
+      padding-bottom: calc(6 / 720 * 100vw);
+    }
+
+    .container-form__email-input::placeholder {
+      font-size: calc(28 / 720 * 100vw);
+      line-height: calc(36 / 720 * 100vw);
+    }
+
+    .container-form__password-label {
+      width: calc(56 / 720 * 100vw);
+      height: calc(16 / 720 * 100vw);
+      margin-top: calc(11 / 720 * 100vw);
+      margin-left: calc(53 / 720 * 100vw);
+      margin-right: calc(491 / 720 * 100vw);
+      font-size: calc(16 / 720 * 100vw);
+      line-height: calc(16 / 720 * 100vw);
+    }
+
+    .pass-error {
+      position: absolute;
+      top: calc(170 / 720 * 100vw);
+      right: calc(46 / 720 * 100vw);
+      font-size: calc(16 / 720 * 100vw);
+      line-height: calc(16 / 720 * 100vw);
+      font-weight: calc(600 / 720 * 100vw);
+    }
+
+    .container-form__password-input {
+      width: calc(509 / 720 * 100vw);
+      height: calc(49 / 720 * 100vw);
+      margin-top: calc(3 / 720 * 100vw);
+      margin-left: calc(45 / 720 * 100vw);
+      margin-right: calc(45 / 720 * 100vw);
+      border: calc(2 / 720 * 100vw) solid goldenrod;
+      font-size: calc(28 / 720 * 100vw);
+      line-height: calc(36 / 720 * 100vw);
+      padding-left: calc(15 / 720 * 100vw);
+      padding-top: calc(7 / 720 * 100vw);
+      padding-bottom: calc(6 / 720 * 100vw);
+    }
+
+    .container-form__password-input::placeholder {
+      font-size: calc(28 / 720 * 100vw);
+      line-height: calc(36 / 720720 * 100vw);
+    }
+
+    .container-form__button {
+      width: calc(180 / 720 * 100vw);
+      height: calc(52 / 720 * 100vw);
+      margin-top: calc(52 / 720 * 100vw);
+      margin-left: calc(210 / 720 * 100vw);
+      margin-right: calc(210 / 768 * 100vw);
+      margin-bottom: calc(37 / 720 * 100vw);
+      font-size: calc(24 / 720 * 100vw);
+      line-height: calc(16 / 720 * 100vw);
+    }
+} 

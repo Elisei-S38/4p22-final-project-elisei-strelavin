@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(43, 43, 43);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100px;
+  background: black;
+}
+
+.box-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.logo {
+  color: gold;
+  font-size: 56px;
+  font-weight: 600;
+  padding: 5px;
+  /* text-decoration: none; */
+  cursor: pointer;
+  transition: .6s color, .8s text-shadow;
+}
+
+.logo:hover {
+  color: yellow;
+  text-shadow: yellow 4px 0 10px;
+}
+
+.box-transitions {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  font-size: 28px;
+  color: gold;
+  margin: 0 15px;
+}
+
+.transitions {
+  color: gold;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .6s color, .6s text-shadow;
+}
+
+.transitions:hover {
+  color: gold;
+  text-shadow: yellow 2px 0 5px;
+}
+
+.indent-signin {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    height: 90px;
+  }
+
+  .box-logo {
+    margin-left: 7px;
+  }
+  
+  .logo {
+    font-size: 48px;
+    padding: 5px;
+  }
+  
+  .line {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  .transitions {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header {
+    height: 80px;
+  }
+
+  .box-logo {
+    margin-left: 5px;
+  }
+  
+  .logo {
+    font-size: 40px;
+    padding: 5px;
+  }
+
+  .line {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  .transitions {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    height: 70px;
+  }
+
+  .logo {
+    font-size: 34px;
+    padding: 5px;
+  }
+
+  .line {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  
+  .transitions {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    height: 60px;
+  }
+
+  .logo {
+    font-size: 28px;
+    padding: 5px;
+  }
+
+  .line {
+    font-size: 12px;
+    margin: 0 3px;
+  }
+  
+  .transitions {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header {
+    height: 50px;
+  }
+
+  .logo {
+    font-size: 24px;
+    padding: 5px;
+  }
+
+  .line {
+    font-size: 10px;
+    margin: 0 3px;
+  }
+
+  .transitions {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .indent-signin {
+    margin-right: 20px;
+  }
+}
