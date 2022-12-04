@@ -1,5 +1,4 @@
 import './SignUp.css';
-
 import React, { useEffect, useState } from 'react';
 
 const SignUp = () => {
@@ -87,7 +86,7 @@ const SignUp = () => {
              />
        <label className="main-container-form__password-confirmation-label" htmlFor="password-confirmation">* Подтверждение пароля</label>
             <div className="main-container-form__password-confirmation-error" id="password-confirmation-error">{ formErrors.truPassword }</div>
-            <input className="main-container-form__password-confirmation-input" 
+            <input className="main-container-form__password-confirmation-input"
                    id="password-confirmation" 
                    name="truPassword" 
                    type="password" 
