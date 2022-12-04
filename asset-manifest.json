@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/4p22-final-project-elisei-strelavin/static/css/main.26e67e43.css",
-    "main.js": "/4p22-final-project-elisei-strelavin/static/js/main.3199802d.js",
+    "main.css": "/4p22-final-project-elisei-strelavin/static/css/main.6c67cf87.css",
+    "main.js": "/4p22-final-project-elisei-strelavin/static/js/main.a0b4c28b.js",
     "index.html": "/4p22-final-project-elisei-strelavin/index.html",
-    "main.26e67e43.css.map": "/4p22-final-project-elisei-strelavin/static/css/main.26e67e43.css.map",
-    "main.3199802d.js.map": "/4p22-final-project-elisei-strelavin/static/js/main.3199802d.js.map"
+    "main.6c67cf87.css.map": "/4p22-final-project-elisei-strelavin/static/css/main.6c67cf87.css.map",
+    "main.a0b4c28b.js.map": "/4p22-final-project-elisei-strelavin/static/js/main.a0b4c28b.js.map"
   },
   "entrypoints": [
-    "static/css/main.26e67e43.css",
-    "static/js/main.3199802d.js"
+    "static/css/main.6c67cf87.css",
+    "static/js/main.a0b4c28b.js"
   ]
 }
