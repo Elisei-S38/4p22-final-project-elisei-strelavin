@@ -5,7 +5,7 @@ import CardItem from '../CardItem/CardItem';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-const NavBar = ({search}) => {
+const NavBar = () => {
 
   
   const  [ filmList, setFilmList ] = useState([]);
@@ -20,42 +20,35 @@ const NavBar = ({search}) => {
 
 const [filteredFilm, setFilteredFilm] = useState(filmList);
 
-useEffect( () => {
+useEffect(() => {
   setFilteredFilm(filmList);
 }, [filmList]);
 
 
-function filmFilter (genre, search){
-  if((!genre || genre === 'all') && !search){
+function filmFilter (genre){
+  if(!genre || genre === 'all'){
     setFilteredFilm(filmList)
       return;
   }
   
   if(genre) {
-      let newFilms = [...filmList].filter(
-      (item) => (item.genre || item.description) === genre,
-          );
-      setFilteredFilm(newFilms)
-  };
-  if(search) {
-      const newFilms = filmList
-      .filter(v => ((v.title).toLowerCase()).indexOf(search.toLowerCase()) + 1 || ((v.description).toLowerCase()).indexOf(search.toLowerCase()) + 1)
+      let newFilms = [...filmList].filter((item) => item.genre === genre);
       setFilteredFilm(newFilms)
   };
 };
 
 const basket = useSelector((state) => state.basket);
 
-console.log(basket);
+console.log('basket: ',basket);
 
   return (
     <>
       <div className="container-nav">
           <div className="box-navigation">
-            <button className='navigation indent-navigation' onClick= {() => filmFilter(`all`, search)} >Все</button>
-            <button className='navigation' onClick= {() => filmFilter(`Комедия`, search)} >Комедия</button>
-            <button className='navigation' onClick= {() => filmFilter(`Приключения`, search)} >Приключения</button>
-            <button className='navigation' onClick= {() => filmFilter(`Фантастика`, search)}>Фантастика</button>
+            <button className='navigation indent-navigation' onClick= {() => filmFilter(`all`)} >Все</button>
+            <button className='navigation' onClick= {() => filmFilter(`Комедия`)} >Комедия</button>
+            <button className='navigation' onClick= {() => filmFilter(`Приключения`)} >Приключения</button>
+            <button className='navigation' onClick= {() => filmFilter(`Фантастика`)}>Фантастика</button>
           </div>
           <div className="box-favorites">
             <Link className='favorites' to='favorites'>Избранное:_{ Object.keys(basket).length } </Link>
