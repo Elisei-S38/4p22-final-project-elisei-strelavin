@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/4p22-final-project-elisei-strelavin/static/css/main.6c67cf87.css",
+    "main.css": "/4p22-final-project-elisei-strelavin/static/css/main.b5d1a1fe.css",
     "main.js": "/4p22-final-project-elisei-strelavin/static/js/main.a0b4c28b.js",
     "index.html": "/4p22-final-project-elisei-strelavin/index.html",
-    "main.6c67cf87.css.map": "/4p22-final-project-elisei-strelavin/static/css/main.6c67cf87.css.map",
+    "main.b5d1a1fe.css.map": "/4p22-final-project-elisei-strelavin/static/css/main.b5d1a1fe.css.map",
     "main.a0b4c28b.js.map": "/4p22-final-project-elisei-strelavin/static/js/main.a0b4c28b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c67cf87.css",
+    "static/css/main.b5d1a1fe.css",
     "static/js/main.a0b4c28b.js"
   ]
 }
